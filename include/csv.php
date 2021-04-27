@@ -7,6 +7,7 @@ $fp = fopen('php://output', 'w');
 
 $query = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='phpproject01' AND TABLE_NAME='items'";
 $result = mysqli_query($conn,$query);
+echo "$result";
 while ($row = mysqli_fetch_row($result)) {
 	$header[] = $row[0];
 }	
@@ -17,6 +18,7 @@ fputcsv($fp, $header);
 
 $query = "SELECT * FROM items";
 $result = mysqli_query($conn, $query);
+echo "$result";
 while($row = mysqli_fetch_row($result)) {
 	fputcsv($fp, $row);
 }
