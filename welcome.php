@@ -43,7 +43,7 @@
             while($row = mysqli_fetch_array($result)){
                 echo "<tr>";
                 echo "<td>" . $row["name"] ."</td> "
-                        . "<td> <img src=\"" . $row["image_url"] . "\" height=\"45%\" width=\"65%\"></img></td>";
+                        . "<td> <img src=\"" . $row["image_url"] . "\" height=\"45%\" width=\"85%\"></img></td>";
                 echo "<td><a href=item.php?id=".$row["id"]."&useruid=".$useruid.">View More Details</td>";
                 echo "</tr>";
                 
