@@ -13,19 +13,19 @@
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="Images/image1.jpg" alt="Home Workout" width="1100" height="500">
+      <img src="Images/image1.jpg" alt="mercedes" width="1100" height="500">
       <div class="carousel-caption">
       	<h2> BUY YOUR DREAM CAR WITH US </h2>
     </div>
     </div>
     <div class="carousel-item">
-      <img src="Images/image3.jpg" alt="Yoga" width="1100" height="500">
+      <img src="Images/image3.jpg" alt="audi" width="1100" height="500">
       <div class="carousel-caption">
       	<h2> SELL YOUR USED CARS </h2>
     </div>
     </div>
     <div class="carousel-item">
-      <img src="Images/image4.jpg" alt="Personalized" width="1100" height="500">
+      <img src="Images/image4.jpg" alt="ferrari" width="1100" height="500">
       <div class="carousel-caption">
       	<h2> BEST MARKET PRICES & DISCOUNTS ON CARS </h2>
       </div>
