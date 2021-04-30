@@ -6,7 +6,7 @@ $id = $_GET['id']; // get id through query string
 
 $del = mysqli_query($conn,"DELETE FROM sellcar WHERE id=$id"); // delete query
 
-if($conn)
+if($del)
 {
     mysqli_close($conn); // Close connection
     header("location:sell.php"); // redirects to all records page
