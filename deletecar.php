@@ -4,9 +4,7 @@ include "include/dbh.inc.php"; // Using database connection file here
 
 $id = $_GET['id']; // get id through query string
 
-$safename4 = htmlspecialchars($id);
-
-$del = mysqli_query($conn,"delete from sellcar where id = '$safename4'"); // delete query
+$del = mysqli_query($conn,"delete from sellcar where id = '$id'"); // delete query
 
 if($del)
 {
