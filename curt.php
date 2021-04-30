@@ -25,22 +25,20 @@ and open the template in the editor.
         $price=$_POST["price"]; 
         $qty=$_POST["qty"]; 
         
-        //echo $price;
-        //echo $qty;
         $amount=$price*$qty;
-      //  echo "Total Amount ".$amount;
         
         include_once 'include/dbh.inc.php';
         
 
 $sql = "INSERT INTO cart(useruid, itemid, quanity,isActive)
 VALUES ('".$useruid."', ".$id.", ".$qty.",1)";
+$safename1 = htmlspecialchars($sql);
 
 if ($conn->query($sql) === TRUE) {
-  //  echo "New record created successfully";
+  // "New record created successfully";
       $last_id = $conn->insert_id;
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $safename1 . "<br>" . $conn->error;
 }
 
 $conn->close();
