@@ -1,6 +1,6 @@
 <?php include 'header.php';?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
         <head>
          <title>Online Shop - Welcome</title>
         <meta charset="UTF-8">
@@ -19,7 +19,7 @@
 
         if (empty($_SESSION['username'])) 
         {
-        //    header('location:index.php');
+
         }
  
             $useruid=($_SESSION["useruid"]); 

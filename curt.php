@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title></title>
@@ -32,7 +32,6 @@ VALUES ('".$useruid."', ".$id.", ".$qty.",1)";
 $safename1 = htmlspecialchars($sql);
 
 if ($conn->query($sql) === TRUE) {
-  // "New record created successfully";
       $last_id = $conn->insert_id;
 } else {
     echo "Error: " . $safename1 . "<br>" . $conn->error;
