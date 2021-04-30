@@ -1,4 +1,5 @@
 <?php include 'header.php';?>
+<!DOCTYPE html>
 <html>
         <head>
          <title>Online Shop - Welcome</title>
