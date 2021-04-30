@@ -26,6 +26,8 @@ and open the template in the editor.
         $qty=$_POST["qty"]; 
         
         $amount=$price*$qty;
+        $safename2 = htmlspecialchars($price);
+        $safename3 = htmlspecialchars($qty);
         
         include_once 'include/dbh.inc.php';
         
@@ -52,14 +54,14 @@ $conn->close();
             <div class="form-group">
                 <label class="control-label col-sm-2" for="user">     Unit Price  :</label>
                 <div class="col-sm-10">
-                    <input name="price" type="text" value="<?php echo $price?>" readonly="readonly"  class="form-control" id="user" readonly="readonly">
+                    <input name="price" type="text" value="<?php echo $safename2?>" readonly="readonly"  class="form-control" id="user" readonly="readonly">
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="control-label col-sm-2" for="add">  Quantity :</label>
                 <div class="col-sm-10">
-                    <input type="text" name="qty"  class="form-control" value="<?php echo $qty?>" id="user" readonly="readonly">
+                    <input type="text" name="qty"  class="form-control" value="<?php echo $safename3?>" id="user" readonly="readonly">
                 </div>
             </div>
             

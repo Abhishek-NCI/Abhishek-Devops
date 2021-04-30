@@ -21,6 +21,7 @@ and open the template in the editor.
   
         $id = $_GET["id"];
         $useruid=($_SESSION["useruid"]);
+        $safename4 = htmlspecialchars($id);
         
         include_once 'include/dbh.inc.php';
 
@@ -55,7 +56,7 @@ and open the template in the editor.
 
         </table>
 
-        <form class="form-horizontal" method="post" action="curt.php?id=<?php echo $id ?>&useruid=<?php echo $useruid ?>">
+        <form class="form-horizontal" method="post" action="curt.php?id=<?php echo $safename4 ?>&useruid=<?php echo $useruid ?>">
             <div class="form-group">
                 <label class="control-label col-sm-2" for="user"> Car Price (In Euro):</label>
                 <div class="col-sm-10">
