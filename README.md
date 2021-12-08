@@ -1,13 +1,11 @@
-# Fit-Me : A fitness Website url:http://fitme-env-1.eba-vmgafpbp.us-east-1.elasticbeanstalk.com/
-
-Fit-ME is developed to provide free exercises at home, in order to stay fit in pandemic. User's can choose among different workouts, yoga & meditation or Customize and add their own workout and calculate BMI after logging in.
+# ABCarrZ : Second hand Cars Website url:http://devops-env-1.eba-bxeypdq6.us-east-1.elasticbeanstalk.com/
 
 Web application built using PHP, HTML, CSS and mariadb database
 
 Running The Project on local machine
 
 Pre-requisites :
-1.Clone the respository from URL "https://github.com/Abhishek-NCI/Fit-Me.git"
+1.Clone the respository from URL "https://github.com/Abhishek-NCI/ABCarrZ.git"
 2.Install PHP on your local machine
 3.Install Xampp on your machine
 
@@ -20,13 +18,13 @@ STEP IV  : Copy the project folder
 STEP V   : Paste in xampp/htdocs/
 STEP VI  : Import the phpproject01.sql file into phpMyAdmin url:http://localhost/phpmyadmin/
 After creating database 
-STEP VII : Open a browser and Run using URL "http://localhost/Fit-Me/"
+STEP VII : Open a browser and Run using URL "http://localhost/ABCarrZ/"
 
  Deploying web application on AWS cloud.
 
 1.You must have AWS account 
 2.You must have git installed on your local machine
-3.Clone the respository from URL "https://github.com/Abhishek-NCI/Fit-Me.git"
+3.Clone the respository from URL "https://github.com/Abhishek-NCI/Abhishek-Devops.git"
 
 STEP I    : Create elastic beanstalk environment with sample application using PHP platform
 STEP II   : Create RDS instance for Mariadb using standard create and make it publically accessible.Put the endpoint of an instance in 'dbh.inc.php'. Access the database created and run the command source phpproject01.sql to extract the database.
